@@ -44,7 +44,7 @@ h2 {
     color: white;
     position: absolute;
     top: 30%;
-    left: 25%;
+    left: 17%;
     line-height: 2rem;
 }
 .text h3 {
@@ -96,4 +96,67 @@ h2 {
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
+  
+
+  /*mobile styel */
+
+  @media(max-width:480px) {
+
+    .text {
+       display:none
+    }
+    .text h3 {
+        
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+   img{
+    width: 200px;
+    margin-top: 15px;
+   }
+  .media {
+      display: none;
+  }
+  .logo {
+      display: none;
+  }
+  } 
+
+  @media(max-width:650px){
+
+    .text {
+       font-size: 1rem;
+       top: 10%;
+       line-height: 1.5rem;
+       left:10%;
+       width: 400px;
+       height: auto;
+     }
+     .text h3 {
+         
+    font-size: 1rem;
+    line-height: 1rem;
+
+}
+     }
+ 
+     /* h1 {
+         font-size: 1.5rem;
+     }
+    img{
+     width: 200px;
+     margin-top: 15px;
+    }
+   .media {
+       display: none;
+   }
+   .logo {
+       display: none;
+   } */
+   
+  }
+
   
