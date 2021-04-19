@@ -1,162 +1,1283 @@
-.nav-link {
-    color: #FFFFFF !important;
-    font-size: 1rem;
-    font-weight: bold;
-}
 
-.nav-item a:hover {
-    border-bottom: 3px solid brown !important;
-}
-.navbar{
-    background-color: #fecd1a !important;
-    
-}
+@font-face {
+    src: url('/fonts/Avenir\ Medium.ttf');
+    font-family: Avenir;
+    }
 
-.nav-item {
-   margin-left: 4rem !important;
-   color:#FFFFFF !important;
-   font-weight: bold;
-}
+    * {
 
+        box-sizing: border-box;
+    }
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: black;
-    font-style: normal;
-}
-
-h1{
-    font-size: 4rem;
-    color: black;
-    font-weight: bold;
-    border-bottom: 2px solid brown;
-    padding: 0.5rem;
-    margin-top: 2rem;
-}
-h2 {
-    color: black;
-    font-weight: bolder;
-}
-.text {
-    width: 800px;
-    color: white;
-    position: absolute;
-    top: 30%;
-    left: 17%;
-    line-height: 2rem;
-}
-.text h3 {
-    
-    color: white;
-    font-size: 2rem;
-    line-height: 3rem;
-}
-#about p{
-
-    font-size: 1.2rem;
-    line-height: 2rem;
-   
-}
-#id {
 
     background-color: #FFFFFF;
-    height: 400px;
-   
+    font-family: Avenir;
 }
-#about {
-    margin-top: 2rem;
-    padding: 1.5rem;
 
+.header {
+    background-color: #424242;
+    background-image: url(/image/user.png);
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    height: 100%;
+    padding: 20rem;
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    bottom: 0;
 }
-#project {
-    background-color: #29B2E8;
+.overlay {
+    width: 100%;  
+    position: absolute;
+    background-color: #424242;
+    top:0;
+    bottom:0;
+    left: 0;
+    opacity:0.2;
+    height: 100%;
+    
+}
+.navbar {
+ background-color: black !important;
+ font-size: 1.1rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+  letter-spacing: 1px;
+  color: white;
+  padding: 1rem 8rem !important;
+  font-family: 'Montserrat Alternates', sans-serif;
+    
+}
+.nav-link{
+    color: #F8F9FA !important;
+    font-weight: 700;
+  
+}
+.nav-item {
+    padding: 0  1rem 0 !important;
+}
+
+.services {
+    background: #FFFFFF;
     padding: 2rem;
     margin-top: 2rem;
-}
-.round-border {
-    border-radius:3px solid black;
-    border-radius: 50%;
-    padding:0.7rem 1rem;
-    width: 200px;
-    background-color: brown;
-    margin-top: 1rem;
-}
-#project a:hover{
-    text-decoration: none;
-    color: white;
-}
-
-#particles-js{
-    width: 100%;
-    height: 50%;
-    background-color: #4a19d1;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
-  
-
-  /*mobile styel */
-
-  @media(max-width:480px) {
-
-    .text {
-       display:none
-    }
-    .text h3 {
-        
-        display: none;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-   img{
-    width: 200px;
-    margin-top: 15px;
-   }
-  .media {
-      display: none;
-  }
-  .logo {
-      display: none;
-  }
-  } 
-
-  @media(max-width:650px){
-
-    .text {
-       font-size: 1rem;
-       top: 10%;
-       line-height: 1.5rem;
-       left:10%;
-       width: 400px;
-       height: auto;
-     }
-     .text h3 {
-         
-    font-size: 1rem;
-    line-height: 1rem;
-
-}
-     }
- 
-     /* h1 {
-         font-size: 1.5rem;
-     }
-    img{
-     width: 200px;
-     margin-top: 15px;
-    }
-   .media {
-       display: none;
-   }
-   .logo {
-       display: none;
-   } */
    
+    
+}
+.remove-border {
+    border: none;
+    background-color: #FFFFFF !important;
+}
+.service-padding {
+    padding: 5rem;
+} 
+.initiative {
+    background-color: #F8F9FA;
+    padding: 10rem;
+    
+}
+.fas {
+    color: rgb(218, 203, 76) !important;
+
+}
+i {
+    padding: 0.7rem !important;
+}
+#about {
+    margin-top: 4rem;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.featured {
+    background-color:#FFFFFF;
+    margin-bottom: 2rem;
+
+}
+.contact {
+    background-color: #212529;
+    padding: 2rem;
+   
+}
+.contact h1 {
+    background-color: #212529;
+    color: #FFFFFF;
+}
+.contact p {
+    color: gray;
+    font-size: 1rem;
+}
+
+input {
+    padding:4rem;
+    height: 50px; 
+  }
+  textarea {
+      margin-top: 2.3rem;
+  }
+  button {
+      height: 70px !important;
+  }
+  .hover-image:hover .overlay {
+    opacity: 0.9;
   }
 
+  .overlaye {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:65%;
+    width:100%;
+    opacity: 0.1;
+    transition: .5s ease;
+    background-color: #FED136;
+  }
+  .text {
+      font-size: 7rem;
+      position: absolute;
+      left: 30%;
+      color: #FFFFFF;
+      font-weight: 700;
+     
+  }
+  /* .modal-dialog {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;
+ 
+  }
   
+  .modal-content {
+    min-height: 100%;
+    border-radius: 0;
+    height: 100% !important;
+    width: 100% !important;
+  } */
+
+  .modal-body {
+      padding: 4rem 20rem 0  20rem;
+      
+  }
+  .modal-body p{
+    line-height: 2rem;
+}
+.modal-body h1{
+   padding: 1rem;
+}
+.modal-header {
+    border: none;
+}
+.modal-content {
+    background-color: #FFFFFF;
+ }
+ .footer {
+     padding: 0.5rem;
+ }
+ #more1 {display: none;}
+ #more2 {display: none;}
+ #more3 {display: none;}
+ .map {
+     background-color: #F8F9FA;
+ }
+
+/* mobile first style */
+
+@media(max-width:350px) {
+
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:0;
+        left: 0;
+        opacity:0.2;
+        height: 65%;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 100% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 2rem;
+       
+        
+    }
+
+    #about {
+        padding-top: 5rem;
+    }
+    .services h2,:p
+    {
+        background: #FFFFFF;
+        padding: 3rem;
+        margin-top: 3rem;
+          
+    }
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+    #initiative h1{
+    margin: 0;
+    font-size: 2rem;
+   margin-top: -5rem;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .modal-body {
+        padding: 2rem;
+        
+    }
+    .modal-body p{
+      line-height: 2rem;
+  }
+  .modal-body h1{
+     padding: 1rem;
+  }
+  .modal-header {
+      border: none;
+  }
+  .modal-content {
+      background-color:#ffff;
+   }
+
+
+
+
+
+}
+
+
+
+/* second media query */
+@media(min-width:351px) {
+
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:0;
+        left: 0;
+        opacity:0.2;
+        height: 55%;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 100% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+    #about {
+
+        padding-top: 2rem;
+    }
+
+    .services {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 2rem;
+       
+        
+    }
+    .services h2,:p
+    {
+        background: #FFFFFF;
+        padding: 3rem;
+        margin-top: 3rem;
+          
+    }
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+    #initiative h1{
+    margin: 0;
+    font-size: 2rem;
+   margin-top: -5rem;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .modal-body {
+        padding: 2rem;
+        
+    }
+    .modal-body p{
+      line-height: 2rem;
+  }
+  .modal-body h1{
+     padding: 1rem;
+  }
+  .modal-header {
+      border: none;
+  }
+  .modal-content {
+      background-color:#ffff;
+   }
+   .footer {
+    height: 30%;
+ }
+ .footer p {
+   font-size:1rem;
+  }
+
+
+
+
+}
+
+/* third mobile */
+
+
+
+@media(min-width:375px) {
+
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        background-position-y: -20%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:0;
+        left: 0;
+        opacity:0.2;
+        height: 100%;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 100% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 2rem;
+       
+        
+    }
+    .services h2,:p
+    {
+        background: #FFFFFF;
+        padding: 3rem;
+        margin-top: 3rem;
+          
+    }
+
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+    #initiative h1{
+    margin: 0;
+    font-size: 2rem;
+   margin-top: -5rem;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .modal-body {
+        padding: 2rem;
+        
+    }
+    .modal-body p{
+      line-height: 2rem;
+  }
+  .modal-body h1{
+     padding: 1rem;
+  }
+  .modal-header {
+      border: none;
+  }
+  .modal-content {
+      background-color:#ffff;
+   }
+   .footer {
+    height: 30%;
+ }
+ .footer p {
+   font-size:1rem;
+  }
+
+
+}
+
+
+/* fourth mobile */
+
+
+@media (min-width:411px) {
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:0;
+        left: 0;
+        opacity:0.2;
+        height: 45%;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 100% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+
+    #about {
+        margin-top: 2rem;
+    }
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 2rem;
+       
+        
+    }
+    .services h2
+    {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 3rem;
+          
+    }
+
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+    #initiative h1{
+    margin: 0;
+    font-size: 2rem;
+   margin-top: -5rem;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .footer {
+        height: 30%;
+     }
+     .footer p {
+       font-size:1rem;
+      }
+
+}
+
+
+/* five mobile */
+
+@media (min-width:414px) {
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:0;
+        left: 0;
+        opacity:0.2;
+        height: 100%;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 100% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 2rem;
+       
+        
+    }
+    .services h2
+    {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 3rem;
+          
+    }
+
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+
+
+
+    #initiative h1{
+    margin: 0;
+    font-size: 2rem;
+   margin-top: -5rem;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .footer {
+        height: 30%;
+     }
+     .footer p {
+       font-size:1rem;
+      }
+}
+
+/* mobile landscape */
+@media (min-width:480px) {
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 0;
+        margin-top: -2rem;
+       
+        
+    }
+
+
+    .service-padding {
+        padding: 0;
+        margin-top: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* six mobile */
+
+@media (min-width:768px) {
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:0;
+        left: 0;
+        opacity:0.2;
+        height: 100%;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 98% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+
+    #about {
+        margin-top: 2rem;
+    }
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 0;
+        margin-top: -2rem;
+       
+        
+    }
+    .services h2
+    {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 3rem;
+          
+    }
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+     
+
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+    #initiative h1{
+    margin: 0;
+    font-size: 2.5rem;
+   margin-top: -5rem;
+   font-weight: bolder;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    } 
+    .footer {
+       height: 30%;
+    }
+    .footer p {
+      font-size:1rem;
+     }
+     .footer {
+        height: 30%;
+     }
+     .footer p {
+       font-size:1rem;
+      }
+}
+/* seven mobile */
+
+@media (min-width:1024px) {
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        background-position-y: -10%;
+        height: 100%;
+        padding: 10rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: gray;
+        top:0;
+        bottom:-50/5;
+        left: 0;
+        opacity:0.2;
+        height: 10%;
+        display: none;
+        
+    }
+    .navbar {
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 0.2rem 1rem !important;
+      font-family: 'Montserrat Alternates', sans-serif;
+      background-color: gray !important;
+      width: 98% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+    .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+
+
+    .services {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 2rem;
+       
+        
+    }
+    .services h2
+    {
+        background: #FFFFFF;
+        padding: 2rem;
+        margin-top: 3rem;
+          
+    }
+
+
+    .service-padding {
+        padding: 0;
+    }
+    .service-padding h3 {
+       margin: 0;
+       padding: 0;
+       font-size: 1.5rem;
+    }
+    #initiative h1{
+    margin: 0;
+    font-size: 2rem;
+   margin-top: -5rem;
+
+        
+    }
+
+    .featured  img {
+      width: 100%;
+    }
+    #contact h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .footer {
+        height: 30%;
+     }
+     .footer p {
+       font-size:1rem;
+      }
+}
+
+/* eight mobile */
+@media (min-width:1025px) {
+    body {
+
+        background-color: #FFFFFF;
+        overflow-x: hidden
+    }
+    
+    .header {
+        background-color: #424242;
+        background-image: url(/image/user.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        background-position-y: 40%;
+        height: 100%;
+        padding: 20rem;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+        margin-top:0
+    }
+    .overlay {
+        width: 100%;  
+        position: absolute;
+        background-color: #424242;
+        top:0;
+        bottom:0;
+        opacity:0.2;
+        height: 100%;
+        
+    }
+    .navbar {
+     background-color: black !important;
+     font-size: 1.1rem;
+      font-weight: 400;
+      padding: 1.5rem 0;
+      letter-spacing: 1px;
+      color: white;
+      padding: 1rem 8rem !important;
+      font-family: Avenir;
+      width: 100% !important;
+        
+    }
+    .nav-link{
+        color: #F8F9FA !important;
+        font-weight: 700;
+      
+    }
+    .nav-item {
+        padding: 0  1rem 0 !important;
+    }
+    
+    .services {
+        background: #FFFFFF;
+        padding: 1rem;  
+        margin: -3rem;   
+        
+    }
+    .remove-border {
+        border: none;
+        background-color: #FFFFFF !important;
+    }
+    .service-padding {
+        padding: 2rem;
+    } 
+    .initiative {
+        background-color: #F8F9FA;
+        padding: 10rem;
+        
+    }
+    .fas {
+        color: rgb(218, 203, 76) !important;
+    
+    }
+    i {
+        padding: 0.7rem !important;
+    }
+    #about {
+        margin-top: 2rem;
+        padding-top: 7rem;
+    }
+    .img-circle {
+        border-radius: 50%;
+    }
+    .featured {
+        background-color:#FFFFFF;
+        margin-bottom: 2rem;
+    
+    }
+    .contact {
+        background-color: #212529;
+        padding: 2rem;
+       
+    }
+    #contact h1 {
+        background-color: #212529;
+        color: #FFFFFF;
+        font-size: 2.5rem;
+    }
+    .contact p {
+        color: gray;
+        font-size: 1rem;
+    }
+      .hover-image:hover .overlaye {
+        opacity: 0.5;
+      }
+    
+      .overlaye {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:65%;
+        width:100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FED136;
+      }
+      .text {
+          font-size: 7rem;
+          position: absolute;
+          left: 30%;
+          color: #FFFFFF;
+          font-weight: 700;
+         
+      }
+      /* .modal-dialog {
+        height: 100% !important;
+        width: 100% !important;
+        margin: 0;
+     
+      }
+      
+      .modal-content {
+        min-height: 100%;
+        border-radius: 0;
+        height: 100% !important;
+        width: 100% !important;
+      } */
+    
+      .modal-body {
+          padding: 4rem 20rem 0  20rem;
+          
+      }
+      .modal-body p{
+        line-height: 2rem;
+    }
+    .modal-body h1{
+       padding: 1rem;
+    }
+    .modal-header {
+        border: none;
+    }
+    .modal-content {
+        background-color: #FFFFFF;
+     }
+     .footer {
+         padding: 0.5rem;
+     }
+     #more1 {display: none;}
+     #more2 {display: none;}
+     #more3 {display: none;}
+     .map {
+         background-color: #F8F9FA;
+     }
+    
+}
